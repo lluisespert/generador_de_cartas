@@ -30,7 +30,8 @@ window.onload = function() {
         var x = document.createElement("IMG");
         x.setAttribute("src", opcion);
         //x.setAttribute("width", "500");
-        x.setAttribute("height", "750");
+        //x.setAttribute("height", "750");
+        manuel(x);
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "3"){
@@ -56,7 +57,8 @@ window.onload = function() {
         var x = document.createElement("IMG");
         x.setAttribute("src", opcion);
         //x.setAttribute("width", "500");
-        x.setAttribute("height", "750");
+        //x.setAttribute("height", "750");
+        manuel(x);
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "0"){ 
@@ -82,7 +84,8 @@ window.onload = function() {
         var x = document.createElement("IMG");
         x.setAttribute("src", opcion);
         //x.setAttribute("width", "500");
-        x.setAttribute("height", "750");
+        //x.setAttribute("height", "750");
+        manuel(x);
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "1"){
@@ -108,7 +111,8 @@ window.onload = function() {
         var x = document.createElement("IMG");
         x.setAttribute("src", opcion);
         //x.setAttribute("width", "500");
-        x.setAttribute("height", "750");
+        //x.setAttribute("height", "750");
+        manuel(x);
         document.querySelector("#cartas").appendChild(x);
 
     }
@@ -129,13 +133,24 @@ function muestra (){
     var x = document.createElement("IMG");
     x.setAttribute("src", opcion);
     //x.setAttribute("width", "500");
-    x.setAttribute("height", "750");
+    //x.setAttribute("height", "750");
+    manuel(x);
+    //x.setAttribute("border-style", "solid");
+    //document.querySelector("#cartas2").setAttribute("border-radius", "50px");
+    //document.querySelector("#cartas2").setAttribute("border", "solid");
     document.querySelector("#cartas2").replaceChildren(x);
 
 }
 
 
+function manuel (micartita){
 
+    micartita.setAttribute("height", "450");
+    micartita.style.border = "solid 5px";
+    micartita.style.borderRadius = "25px";
+    micartita.style.padding = "25px";
+
+}
 
     //var x = document.createElement("IMG");
     //x.setAttribute("src", imagenes[i]);
