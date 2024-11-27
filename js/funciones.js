@@ -29,8 +29,8 @@ window.onload = function() {
 
         var x = document.createElement("IMG");
         x.setAttribute("src", opcion);
-        x.setAttribute("width", "500");
-        x.setAttribute("height", "500");
+        //x.setAttribute("width", "500");
+        x.setAttribute("height", "750");
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "3"){
@@ -55,8 +55,8 @@ window.onload = function() {
 
         var x = document.createElement("IMG");
         x.setAttribute("src", opcion);
-        x.setAttribute("width", "500");
-        x.setAttribute("height", "500");
+        //x.setAttribute("width", "500");
+        x.setAttribute("height", "750");
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "0"){ 
@@ -81,8 +81,8 @@ window.onload = function() {
 
         var x = document.createElement("IMG");
         x.setAttribute("src", opcion);
-        x.setAttribute("width", "500");
-        x.setAttribute("height", "500");
+        //x.setAttribute("width", "500");
+        x.setAttribute("height", "750");
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "1"){
@@ -107,8 +107,8 @@ window.onload = function() {
 
         var x = document.createElement("IMG");
         x.setAttribute("src", opcion);
-        x.setAttribute("width", "500");
-        x.setAttribute("height", "500");
+        //x.setAttribute("width", "500");
+        x.setAttribute("height", "750");
         document.querySelector("#cartas").appendChild(x);
 
     }
@@ -128,9 +128,9 @@ function muestra (){
 
     var x = document.createElement("IMG");
     x.setAttribute("src", opcion);
-    x.setAttribute("width", "500");
-    x.setAttribute("height", "500");
-    document.querySelector("#cartas2").appendChild(x);
+    //x.setAttribute("width", "500");
+    x.setAttribute("height", "750");
+    document.querySelector("#cartas2").replaceChildren(x);
 
 }
 
