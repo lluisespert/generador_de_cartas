@@ -31,7 +31,6 @@ window.onload = function() {
         x.setAttribute("src", opcion);
         x.setAttribute("width", "500");
         x.setAttribute("height", "500");
-        console.log(x);
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "3"){
@@ -46,7 +45,7 @@ window.onload = function() {
 
             numero = "11";
 
-        }else if (numero += "10"){
+        }else if (numero == "10"){
 
             numero = "12"
 
@@ -58,7 +57,6 @@ window.onload = function() {
         x.setAttribute("src", opcion);
         x.setAttribute("width", "500");
         x.setAttribute("height", "500");
-        console.log(x);
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "0"){ 
@@ -69,11 +67,11 @@ window.onload = function() {
 
             numero = "10";
 
-        }else if (numero += "9"){
+        }else if (numero == "9"){
 
             numero = "11";
 
-        }else if (numero += "10"){
+        }else if (numero == "10"){
 
             numero = "12"
 
@@ -85,7 +83,6 @@ window.onload = function() {
         x.setAttribute("src", opcion);
         x.setAttribute("width", "500");
         x.setAttribute("height", "500");
-        console.log(x);
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "1"){
@@ -112,7 +109,6 @@ window.onload = function() {
         x.setAttribute("src", opcion);
         x.setAttribute("width", "500");
         x.setAttribute("height", "500");
-        console.log(x);
         document.querySelector("#cartas").appendChild(x);
 
     }
