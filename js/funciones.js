@@ -115,8 +115,28 @@ window.onload = function() {
 
 };
 
+let boton = document.getElementById("magia"); 
+boton.addEventListener("click", muestra);
 
-  
+function muestra (){
+
+    let numerocarta = document.getElementById("numero").value;
+    let palocarta = document.getElementById("palocarta").value;
+
+
+    let opcion = "./baraja_espanyola/"+palocarta+"/"+numerocarta+ "_de_"+palocarta+".png";
+
+    var x = document.createElement("IMG");
+    x.setAttribute("src", opcion);
+    x.setAttribute("width", "500");
+    x.setAttribute("height", "500");
+    document.querySelector("#cartas2").appendChild(x);
+
+}
+
+
+
+
     //var x = document.createElement("IMG");
     //x.setAttribute("src", imagenes[i]);
     //x.setAttribute("width", "500");
