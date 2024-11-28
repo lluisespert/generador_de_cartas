@@ -31,7 +31,7 @@ window.onload = function() {
         x.setAttribute("src", opcion);
         //x.setAttribute("width", "500");
         //x.setAttribute("height", "750");
-        manuel(x);
+        estilos(x);
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "3"){
@@ -58,7 +58,7 @@ window.onload = function() {
         x.setAttribute("src", opcion);
         //x.setAttribute("width", "500");
         //x.setAttribute("height", "750");
-        manuel(x);
+        estilos(x);
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "0"){ 
@@ -85,7 +85,7 @@ window.onload = function() {
         x.setAttribute("src", opcion);
         //x.setAttribute("width", "500");
         //x.setAttribute("height", "750");
-        manuel(x);
+        estilos(x);
         document.querySelector("#cartas").appendChild(x);
 
     }else if (baraja == "1"){
@@ -112,7 +112,7 @@ window.onload = function() {
         x.setAttribute("src", opcion);
         //x.setAttribute("width", "500");
         //x.setAttribute("height", "750");
-        manuel(x);
+        estilos(x);
         document.querySelector("#cartas").appendChild(x);
 
     }
@@ -134,7 +134,7 @@ function muestra (){
     x.setAttribute("src", opcion);
     //x.setAttribute("width", "500");
     //x.setAttribute("height", "750");
-    manuel(x);
+    estilos(x);
     //x.setAttribute("border-style", "solid");
     //document.querySelector("#cartas2").setAttribute("border-radius", "50px");
     //document.querySelector("#cartas2").setAttribute("border", "solid");
@@ -143,7 +143,7 @@ function muestra (){
 }
 
 
-function manuel (micartita){
+function estilos (micartita){
 
     micartita.setAttribute("height", "450");
     micartita.style.border = "solid 5px";
