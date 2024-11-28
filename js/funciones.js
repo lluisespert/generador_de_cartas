@@ -27,10 +27,8 @@ window.onload = function() {
 
         let opcion = "./baraja_espanyola/oros/"+ numero + "_de_oros.png";
 
-        var x = document.createElement("IMG");
+        let x = document.createElement("IMG");
         x.setAttribute("src", opcion);
-        //x.setAttribute("width", "500");
-        //x.setAttribute("height", "750");
         estilos(x);
         document.querySelector("#cartas").appendChild(x);
 
@@ -54,10 +52,8 @@ window.onload = function() {
   
         let opcion = "./baraja_espanyola/copas/"+numero + "_de_copas.png";
 
-        var x = document.createElement("IMG");
+        let x = document.createElement("IMG");
         x.setAttribute("src", opcion);
-        //x.setAttribute("width", "500");
-        //x.setAttribute("height", "750");
         estilos(x);
         document.querySelector("#cartas").appendChild(x);
 
@@ -81,10 +77,8 @@ window.onload = function() {
 
         let opcion = "./baraja_espanyola/espadas/"+numero + "_de_espadas.png";
 
-        var x = document.createElement("IMG");
+        let x = document.createElement("IMG");
         x.setAttribute("src", opcion);
-        //x.setAttribute("width", "500");
-        //x.setAttribute("height", "750");
         estilos(x);
         document.querySelector("#cartas").appendChild(x);
 
@@ -108,10 +102,8 @@ window.onload = function() {
 
         let opcion = "./baraja_espanyola/bastos/"+numero + "_de_bastos.png";
 
-        var x = document.createElement("IMG");
+        let x = document.createElement("IMG");
         x.setAttribute("src", opcion);
-        //x.setAttribute("width", "500");
-        //x.setAttribute("height", "750");
         estilos(x);
         document.querySelector("#cartas").appendChild(x);
 
@@ -130,14 +122,9 @@ function muestra (){
 
     let opcion = "./baraja_espanyola/"+palocarta+"/"+numerocarta+ "_de_"+palocarta+".png";
 
-    var x = document.createElement("IMG");
+    let x = document.createElement("IMG");
     x.setAttribute("src", opcion);
-    //x.setAttribute("width", "500");
-    //x.setAttribute("height", "750");
     estilos(x);
-    //x.setAttribute("border-style", "solid");
-    //document.querySelector("#cartas2").setAttribute("border-radius", "50px");
-    //document.querySelector("#cartas2").setAttribute("border", "solid");
     document.querySelector("#cartas2").replaceChildren(x);
 
 }
@@ -152,8 +139,4 @@ function estilos (micartita){
 
 }
 
-    //var x = document.createElement("IMG");
-    //x.setAttribute("src", imagenes[i]);
-    //x.setAttribute("width", "500");
-    //x.setAttribute("height", "500");
-    //document.querySelector("#cartas").appendChild(x);
+
