@@ -7,107 +7,24 @@ window.onload = function() {
   
     let baraja = Math.floor(Math.random() * palos.length);
 
-    if (baraja == "2"){
+    let numero = Math.floor(Math.random() * numeros.length);
 
-        let numero = Math.floor(Math.random() * numeros.length) + 1;
+    console.log(numero);
 
-        if (numero == "8"){
+    if(numero == "8"){
+        numero = "10";
+    }else if (numero == "9"){
+        numero = "11";
+    }else if (numero == "10"){
+        numero ="12";
+    };
 
-            numero = "10";
+    let opcion = "./baraja_espanyola/"+palos[baraja]+"/"+ numero + "_de_"+palos[baraja]+".png";
 
-        }else if (numero == "9"){
-
-            numero = "11";
-
-        }else if (numero == "10"){
-
-            numero = "12";
-
-        }
-
-        let opcion = "./baraja_espanyola/oros/"+ numero + "_de_oros.png";
-
-        let x = document.createElement("IMG");
-        x.setAttribute("src", opcion);
-        estilos(x);
-        document.querySelector("#cartas").appendChild(x);
-
-    }else if (baraja == "3"){
-
-        let numero = Math.floor(Math.random() * numeros.length) + 1;
-
-        if (numero == "8"){
-
-            numero = "10";
-
-        }else if (numero == "9"){
-
-            numero = "11";
-
-        }else if (numero == "10"){
-
-            numero = "12"
-
-        }
-  
-        let opcion = "./baraja_espanyola/copas/"+numero + "_de_copas.png";
-
-        let x = document.createElement("IMG");
-        x.setAttribute("src", opcion);
-        estilos(x);
-        document.querySelector("#cartas").appendChild(x);
-
-    }else if (baraja == "0"){ 
-
-        let numero = Math.floor(Math.random() * numeros.length) + 1;
-
-        if (numero == "8"){
-
-            numero = "10";
-
-        }else if (numero == "9"){
-
-            numero = "11";
-
-        }else if (numero == "10"){
-
-            numero = "12"
-
-        }
-
-        let opcion = "./baraja_espanyola/espadas/"+numero + "_de_espadas.png";
-
-        let x = document.createElement("IMG");
-        x.setAttribute("src", opcion);
-        estilos(x);
-        document.querySelector("#cartas").appendChild(x);
-
-    }else if (baraja == "1"){
-
-        let numero = Math.floor(Math.random() * numeros.length)+ 1;
-
-        if (numero == "8"){
-
-            numero = "10";
-
-        }else if (numero == "9"){
-
-            numero = "11";
-
-        }else if (numero == "10"){
-
-            numero = "12"
-
-        }
-
-        let opcion = "./baraja_espanyola/bastos/"+numero + "_de_bastos.png";
-
-        let x = document.createElement("IMG");
-        x.setAttribute("src", opcion);
-        estilos(x);
-        document.querySelector("#cartas").appendChild(x);
-
-    }
+    let x = document.createElement("IMG");
+    x.setAttribute("src", opcion);
+    estilos(x);
+    document.querySelector("#cartas").appendChild(x);
 
 };
 
